@@ -83,6 +83,28 @@
     .service h3{margin:0;font:500 clamp(1.25rem,2vw,1.65rem)/1.2 Georgia,"Times New Roman",serif}
     .service p{max-width:440px;margin:0;color:var(--muted);font-size:.88rem}
     .service__mark{width:26px;height:26px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--green);font-size:.9rem}
+
+    .showcase{background:var(--paper)}
+    .showcase__feature{display:grid;grid-template-columns:1.06fr .94fr;overflow:hidden;background:var(--ink);color:var(--paper)}
+    .showcase__photo{position:relative;min-height:390px;margin:0;background:var(--paper-dark)}
+    .showcase__photo img{display:block;width:100%;height:100%;min-height:390px;object-fit:cover;object-position:center}
+    .showcase__photo figcaption{position:absolute;right:14px;bottom:14px;padding:8px 11px;background:#111b17e8;color:var(--paper);font-size:.7rem;letter-spacing:.04em}
+    .showcase__feature-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,5vw,58px)}
+    .showcase__feature-copy .section-label{color:var(--clay-light)}
+    .showcase__feature-copy h3{max-width:530px;margin:16px 0;font:500 clamp(1.8rem,3vw,3rem)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.04em}
+    .showcase__feature-copy p{max-width:460px;margin:0;color:#c5cec4}
+    .showcase__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:22px}
+    .showcase__card{min-width:0;border:1px solid var(--line);background:var(--white)}
+    .showcase__art{display:grid;height:340px;place-items:center;padding:14px;background:#ece8dd;transition:background-color .18s ease}
+    .showcase__art:hover{background:#e4dfd2}
+    .showcase__art img{display:block;width:100%;height:100%;object-fit:contain}
+    .showcase__card-copy{padding:17px 18px 20px}
+    .showcase__card-copy>span{color:var(--clay);font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .showcase__card-copy h3{margin:8px 0 5px;font:500 1.2rem/1.2 Georgia,"Times New Roman",serif}
+    .showcase__card-copy p{margin:0;color:var(--muted);font-size:.82rem}
+    .showcase__note{margin-top:22px;padding:17px 20px;border-left:2px solid var(--clay);background:var(--paper-dark);color:var(--muted);font-size:.84rem}
+    .showcase__note p{margin:0}
+    .showcase__note a{color:var(--green);font-weight:750}
     .focus{padding:0 0 100px}
     .focus__panel{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;padding:52px;background:var(--green-panel);color:var(--paper)}
     .focus__panel .section-label{color:var(--paper)}
@@ -122,6 +144,8 @@
       .hero__art{min-height:340px}
       .section__intro{grid-template-columns:1fr;gap:20px}
       .section__intro>p{margin-left:0}
+      .showcase__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .showcase__art{height:320px}
       .focus__panel{padding:36px}
       .guide__grid{gap:36px}
     }
@@ -147,6 +171,10 @@
       .service p{grid-column:2/4;grid-row:2}
       .service__mark{grid-column:3;grid-row:1}
       .service__number{grid-column:1;grid-row:1}
+      .showcase__feature{grid-template-columns:1fr}
+      .showcase__photo,.showcase__photo img{min-height:280px}
+      .showcase__grid{grid-template-columns:1fr;gap:14px}
+      .showcase__art{height:360px}
       .focus{padding-bottom:72px}
       .focus__panel{grid-template-columns:1fr;gap:28px;padding:28px 22px}
       .focus__note{grid-template-columns:38px 1fr;gap:12px;padding:17px 0}
@@ -169,11 +197,11 @@
         <span class="brand__name"><strong>CONCORDIA</strong><small>Control de plagas</small></span>
       </a>
       <nav class="nav" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a><a href="#enfoque">Enfoque</a><a href="#consulta">Contacto</a><a class="nav__cta" href="#consulta">Consultar</a>
+        <a href="#servicios">Servicios</a><a href="#material">Material visual</a><a href="#enfoque">Enfoque</a><a href="#consulta">Contacto</a><a class="nav__cta" href="#consulta">Consultar</a>
       </nav>
       <details class="mobile-nav">
         <summary>Menú</summary>
-        <div class="mobile-nav__links"><a href="#servicios">Servicios</a><a href="#enfoque">Enfoque</a><a href="#consulta">Contacto</a></div>
+        <div class="mobile-nav__links"><a href="#servicios">Servicios</a><a href="#material">Material visual</a><a href="#enfoque">Enfoque</a><a href="#consulta">Contacto</a></div>
       </details>
     </div>
   </header>
@@ -216,6 +244,24 @@
           <article class="service"><span class="service__number">03</span><h3>Desinfección</h3><p>Servicio de desinfección para espacios de uso institucional.</p><span class="service__mark" aria-hidden="true">↗</span></article>
           <article class="service"><span class="service__number">04</span><h3>Control de murciélagos</h3><p>Consultas por situaciones vinculadas a la presencia de murciélagos.</p><span class="service__mark" aria-hidden="true">↗</span></article>
         </div>
+      </div>
+    </section>
+
+
+    <section class="section showcase" id="material" aria-labelledby="material-title">
+      <div class="shell">
+        <div class="section__intro"><div><span class="section-label">Material visual</span><h2 id="material-title">Un vistazo al control de plagas.</h2></div><p>Imágenes y piezas de difusión compartidas por el equipo para acompañar la presentación de sus servicios en Concordia.</p></div>
+        <article class="showcase__feature">
+          <figure class="showcase__photo"><img src="assets/control-roedores-planta.webp" alt="Profesional con equipo de protección junto a una estación cebadera en una planta de alimentos." loading="lazy" decoding="async"><figcaption>Imagen compartida por el equipo</figcaption></figure>
+          <div class="showcase__feature-copy"><span class="section-label">Desratización</span><h3>Control de roedores en espacios productivos.</h3><p>Una imagen ilustrativa del uso de estaciones cebaderas en un entorno de producción de alimentos.</p></div>
+        </article>
+        <div class="showcase__grid" aria-label="Piezas gráficas del equipo">
+          <article class="showcase__card"><a class="showcase__art" href="assets/control-integral-plagas.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir pieza gráfica sobre control integral de plagas"><img src="assets/control-integral-plagas.webp" alt="Pieza gráfica de Concordia Control de Plagas con ilustraciones de insectos, roedores y arácnidos." loading="lazy" decoding="async"></a><div class="showcase__card-copy"><span>Servicios</span><h3>Control integral de plagas</h3><p>Material de difusión compartido por el equipo.</p></div></article>
+          <article class="showcase__card"><a class="showcase__art" href="assets/prevencion-alacranes.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir pieza de difusión sobre alacranes"><img src="assets/prevencion-alacranes.webp" alt="Pieza gráfica de Concordia Control de Plagas sobre prevención ante alacranes." loading="lazy" decoding="async"></a><div class="showcase__card-copy"><span>Prevención</span><h3>Alacranes</h3><p>Una pieza visual de comunicación del equipo.</p></div></article>
+          <article class="showcase__card"><a class="showcase__art" href="assets/arana-violinista.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir pieza de difusión sobre araña violinista"><img src="assets/arana-violinista.webp" alt="Pieza gráfica de Concordia Control de Plagas sobre la araña violinista." loading="lazy" decoding="async"></a><div class="showcase__card-copy"><span>Información visual</span><h3>Araña violinista</h3><p>Material gráfico compartido por el equipo.</p></div></article>
+          <article class="showcase__card"><a class="showcase__art" href="assets/informacion-alacranes.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir pieza de información sobre alacranes"><img src="assets/informacion-alacranes.webp" alt="Pieza gráfica de Concordia Control de Plagas con información visual sobre alacranes." loading="lazy" decoding="async"></a><div class="showcase__card-copy"><span>Información visual</span><h3>Reconocer alacranes</h3><p>Contenido gráfico enviado por el equipo.</p></div></article>
+        </div>
+        <aside class="showcase__note"><p>La identificación de especies por imágenes requiere cautela. Ante una picadura, buscá atención médica de inmediato. <a href="https://www.argentina.gob.ar/escorpiones" target="_blank" rel="noopener noreferrer">Ver recomendaciones oficiales</a>.</p></aside>
       </div>
     </section>
 

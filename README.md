@@ -1,24 +1,23 @@
 # Concordia Control de Plagas
 
-Primera versión de una web institucional para servicios de control de plagas en Concordia, Entre Ríos.
+Web institucional para servicios de control de plagas en Concordia, Entre Ríos.
 
 ## Contenido confirmado
 
-- Enfoque institucional.
+- Atención institucional.
 - Desratización, desinsectación, desinfección y control de murciélagos.
 - Zona: Concordia, Entre Ríos.
+- WhatsApp: +54 9 345 408-7566 y +54 9 345 434-1332.
 
-No se recibieron fotos ni logo. La portada usa una ilustración geométrica conceptual; no representa trabajos realizados.
+## Material visual
+
+El directorio `assets/` contiene una imagen ilustrativa y cuatro piezas gráficas proporcionadas por el equipo. Las piezas se presentan como material de difusión; no sumar sus afirmaciones como contenido propio sin validarlas. Las dos capturas nocturnas de redes se reservaron hasta recibir originales con mejor calidad.
 
 ## Preview
 
-https://tuwebentresdias.github.io/concordia-control-de-plagas/
+https://tuwebentresdias.github.io/concordia/
 
-La página lleva `noindex, nofollow` mientras se revisa. La URL canónica, el sitemap y la indexación quedan para cuando se confirme el dominio de producción y el lanzamiento.
-
-## Contacto
-
-El número público de WhatsApp todavía está pendiente de confirmación, así que el preview no publica un teléfono ni un enlace directo de contacto. Agregarlo cuando el negocio confirme cuál quiere recibir las consultas.
+La página conserva `noindex, nofollow` durante la revisión. El dominio de producción y el lanzamiento quedan pendientes de confirmación.
 
 ## Referencia visual
 
